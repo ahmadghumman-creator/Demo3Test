@@ -20,7 +20,7 @@ jobs:
             --cloud-type=m \
             --labels=cml-gpu \
             --single=true \
-            --cloud-startup-script "
+            --cloud-startup-script """
               #!/bin/bash
               sudo apt-get install -y \
                   apt-transport-https \
@@ -39,7 +39,7 @@ jobs:
               # Linux post-install
               sudo groupadd docker
               sudo usermod -aG docker $USER
-              sudo systemctl enable docker"
+              sudo systemctl enable docker"""
   train-model:
     needs: deploy-runner
     runs-on: [self-hosted, cml-gpu]
