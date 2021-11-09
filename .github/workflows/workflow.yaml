@@ -18,7 +18,8 @@ jobs:
             --cloud=azure \
             --cloud-region=southeastasia \
             --cloud-type=m \
-            --labels=cml-gpu
+            --labels=cml-gpu \
+            --single=true
   train-model:
     needs: deploy-runner
     runs-on: [self-hosted, cml-gpu]
