@@ -15,7 +15,7 @@ jobs:
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}		  
           REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
-          cml-runner \
+          cml-runner-name \
             --cloud=azure \
             --cloud-region=southeast-asia \
             --cloud-type=l \
