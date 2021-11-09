@@ -19,7 +19,6 @@ jobs:
             --cloud-region=southeastasia \
             --cloud-type=m \
             --labels=cml-gpu \
-            --reuse=true \
             --single=true
   train-model:
     needs: deploy-runner
