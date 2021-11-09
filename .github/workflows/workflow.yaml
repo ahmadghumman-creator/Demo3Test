@@ -17,7 +17,7 @@ jobs:
           cml-runner \
             --cloud=azure \
             --cloud-region=southeastasia \
-            --cloud-type=Standard_NC6 \
+            --cloud-type=standard_nc6 \
             --labels=cml-gpu \
             --single=true
   train-model:
