@@ -1,7 +1,6 @@
 name: MLOpsDemoTest
 on: [push]
 jobs:
-
   deploy-runner:
     runs-on: ubuntu-latest
     steps:
