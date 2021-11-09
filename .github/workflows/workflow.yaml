@@ -17,7 +17,7 @@ jobs:
         run: |
           cml-runner \
             --cloud=azure \
-            --cloud-region=southeast-asia \
+            --cloud-region=southeastasia \
             --cloud-type=l \
             --labels=cml-gpu
   train-model:
